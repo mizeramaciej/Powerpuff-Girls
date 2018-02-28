@@ -20,5 +20,10 @@ gradle run
  - ws [n] - moves back by n px
  - lw [n] - turns left by n degrees
  - pw [n] - turns right by n degrees
+ - up - Powerpuff Girl is no longer drawing
+ - down - Powerpuff girl is drawing
+ - repeat n [ command ] - repeates command n times
+ 
+ Project made with Patrycja Tarasińska and Marcin Habzda
 
 [logo]: <http://www.enauczanie.com/start/oprogramowanie/logo-komeniusz/pobierz>
