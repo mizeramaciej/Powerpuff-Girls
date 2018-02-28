@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+
+<Group xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.to2.controller.Controller">
+    <Canvas fx:id="backgroundCanvas" height="600.0" width="1000.0" />
+    <Canvas fx:id="linesCanvas" height="600.0" width="1000.0" />
+    <Canvas fx:id="imageCanvas" height="640.0" width="1000.0" />
+    <ComboBox fx:id="commandComboBox" layoutX="240.0" layoutY="580.0" prefWidth="300" promptText="Enter a command" />
+    <Button id="executeButton" layoutX="550.0" layoutY="580.0" onAction="#onCommandEntered" prefHeight="26.0" prefWidth="100.0" text="Execute" />
+    <ComboBox fx:id="savedDrawingsComboBox" layoutX="820.0" layoutY="600.0" prefHeight="26.0" prefWidth="170.0" promptText="Import drawing" />
+    <Button id="executeButton" layoutX="820.0" layoutY="560.0" onAction="#onSaveClicked" prefHeight="26.0" prefWidth="168.0" text="Save drawing" />
+    <ComboBox fx:id="choiceGirlComboBox" layoutX="15.0" layoutY="560.0" prefWidth="155" promptText="Choose a girl" />
+    <Button id="undoButton" layoutX="661.0" layoutY="580.0" onAction="#undoCommand" prefHeight="26.0" prefWidth="100.0" text="Undo" />
+</Group>

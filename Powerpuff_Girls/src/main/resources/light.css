@@ -1,0 +1,83 @@
+* {
+    -background-light: #b5b5b5;
+    -background-hover: #aaaaaa;
+    -border-light: #a8a8a8;
+    -button-hover: #c4c4c4;
+    -button-pressed: #919191;
+    -text-light: #999999;
+}
+
+.text-field {
+    -fx-background-color: -background-light;
+    -fx-background-radius: 10px;
+
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+}
+
+.combo-box {
+    -fx-background-color: -background-light;
+    -fx-background-radius: 10px;
+    -fx-border-color: -border-light;
+    -fx-border-width: 2;
+    -fx-border-radius: 10px;
+
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: -background-hover;
+}
+
+.combo-box .list-cell:selected {
+    -fx-background-color: -background-light;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+#choiceGirlComboBox:hover {
+    -fx-background-color: -button-hover;
+}
+
+#choiceGirlComboBox .cell:selected {
+    -fx-text-fill: black;
+}
+
+.button {
+    -fx-background-color: -background-light;
+    -fx-background-radius: 10px;
+
+    -fx-border-color: -border-light;
+    -fx-border-width: 2;
+    -fx-border-radius: 10px;
+
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+}
+
+.button:hover {
+    -fx-background-color: -button-hover;
+}
+
+/*.button:pressed, .button:default:hover:pressed {*/
+/*-fx-background-color: -button-pressed;*/
+/*-fx-text-fill: -text-light;*/
+/*}*/
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: -text-light;
+    -fx-text-fill: black;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+/*.button:default:hover {*/
+/*-fx-background-color: derive(-fx-focus-color,30%);*/
+/*}*/

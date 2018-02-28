@@ -1,0 +1,91 @@
+* {
+    -background-light: #474e59;
+    -background-hover: #232323;
+    -border-light: #515963;
+    -button-hover: #3a3a3a;
+    -button-pressed: #919191;
+    -text-light: #1d1d1d;
+}
+
+.text-field {
+    -fx-background-color: -background-light;
+    -fx-background-radius: 10px;
+
+    -fx-font-size: 11pt;
+    -fx-text-fill: white;
+}
+
+.combo-box {
+    -fx-background-color: -background-light;
+    -fx-background-radius: 10px;
+    -fx-border-color: -border-light;
+    -fx-border-width: 2;
+    -fx-border-radius: 10px;
+
+    -fx-font-size: 11pt;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: -background-hover;
+}
+
+.combo-box .list-cell:selected {
+    -fx-background-color: -background-light;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+#choiceGirlComboBox:hover {
+    -fx-background-color: -button-hover;
+}
+
+#choiceGirlComboBox .cell:selected {
+    -fx-text-fill: white;
+}
+
+#savedDrawingsComboBox:hover {
+    -fx-background-color: -button-hover;
+}
+
+#savedDrawingsComboBox .cell:selected {
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-background-color: -background-light;
+    -fx-background-radius: 10px;
+
+    -fx-border-color: -border-light;
+    -fx-border-width: 2;
+    -fx-border-radius: 10px;
+
+    -fx-font-size: 11pt;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: -button-hover;
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: -button-pressed;
+    -fx-text-fill: -text-light;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: -text-light;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color, 30%);
+}
